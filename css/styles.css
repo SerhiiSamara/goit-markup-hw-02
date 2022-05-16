@@ -1,4 +1,101 @@
+:root {
+	--light-background-color: #fff;
+	--dark-background-color: #2F303A;
+	--acent-color: #2196F3;
+	--light-color-text: #fff;
+	--direct-color-text: #757575;
+	--black-color-text: #000;
+	--header-color-text: #212121;
+}
+
 body {
-  background: #000;
-  color: #fff;
+	font-family: 'Roboto', sans-serif;
+	color: #757575;
+
+	background-color: var(--light-background-color);
+}
+
+.list {
+	list-style: none;
+}
+
+.logo {
+	font-family: 'Raleway', sans-serif;
+	color: var(--black-color-text);
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
+	text-decoration: none;
+}
+
+.logo:focus {
+	outline: none;
+}
+
+.logo-accent {
+	color: var(--acent-color);
+}
+
+.nav-link {
+	color: var(--header-color-text);
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.1;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+	color: var(--acent-color);
+
+	cursor: pointer;
+	outline: 0;
+}
+
+.contact-link {
+	color: var(--direct-color-text);
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+	color: var(--acent-color);
+
+	cursor: pointer;
+	outline: 0;
+}
+
+.hero {
+	background-color: var(--dark-background-color);
+}
+
+.hero-title {
+		color: var(--light-color-text);
+		font-weight: 900;
+		font-size: 44px;
+		line-height: 1.4;
+		text-align: center;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+}
+
+.hero-button {
+	color: var(--light-color-text);
+
+	background-color: var(--acent-color);
+}
+
+.section-title {
+	color: var(--header-color-text);
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
+	text-align: center;
 }
