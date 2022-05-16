@@ -19,6 +19,8 @@ body {
 	list-style: none;
 }
 
+/* Сторінка студія */
+/* Логотип */
 .logo {
 	font-family: 'Raleway', sans-serif;
 	color: var(--black-color-text);
@@ -37,6 +39,7 @@ body {
 	color: var(--acent-color);
 }
 
+/* Головна навигация */
 .nav-link {
 	color: var(--header-color-text);
 	font-weight: 500;
@@ -71,18 +74,19 @@ body {
 	outline: 0;
 }
 
+/* Герой */
 .hero {
 	background-color: var(--dark-background-color);
 }
 
 .hero-title {
-		color: var(--light-color-text);
-		font-weight: 900;
-		font-size: 44px;
-		line-height: 1.4;
-		text-align: center;
-		letter-spacing: 0.06em;
-		text-transform: uppercase;
+	color: var(--light-color-text);
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.4;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
 }
 
 .hero-button {
@@ -91,6 +95,7 @@ body {
 	background-color: var(--acent-color);
 }
 
+/* Загальне для секцій */
 .section-title {
 	color: var(--header-color-text);
 	font-weight: 700;
