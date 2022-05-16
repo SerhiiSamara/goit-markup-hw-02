@@ -2,15 +2,16 @@
 	--light-background-color: #fff;
 	--dark-background-color: #2F303A;
 	--acent-color: #2196F3;
-	--light-color-text: #fff;
-	--direct-color-text: #757575;
-	--black-color-text: #000;
-	--header-color-text: #212121;
+	--light-text-color: #fff;
+	--light-link-color: rgba(255, 255, 255, 0.6);
+	--primary-text-color: #757575;
+	--black-text-color: #000;
+	--title-text-color: #212121;
 }
 
 body {
 	font-family: 'Roboto', sans-serif;
-	color: #757575;
+	color: var(--primary-text-color);
 
 	background-color: var(--light-background-color);
 }
@@ -23,7 +24,7 @@ body {
 /* Логотип */
 .logo {
 	font-family: 'Raleway', sans-serif;
-	color: var(--black-color-text);
+	color: var(--black-text-color);
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.2;
@@ -31,6 +32,7 @@ body {
 	text-decoration: none;
 }
 
+/* logo */
 .logo:focus {
 	outline: none;
 }
@@ -39,9 +41,9 @@ body {
 	color: var(--acent-color);
 }
 
-/* Головна навигация */
+/* nav */
 .nav-link {
-	color: var(--header-color-text);
+	color: var(--title-text-color);
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.1;
@@ -53,12 +55,12 @@ body {
 .nav-link:focus {
 	color: var(--acent-color);
 
-	cursor: pointer;
 	outline: 0;
 }
 
-.contact-link {
-	color: var(--direct-color-text);
+/* contact */
+.contacts-link {
+	color: var(--primary-text-color);
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 16px;
@@ -66,21 +68,20 @@ body {
 	text-decoration: none;
 }
 
-.contact-link:hover,
-.contact-link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
 	color: var(--acent-color);
 
-	cursor: pointer;
 	outline: 0;
 }
 
-/* Герой */
+/* hero */
 .hero {
 	background-color: var(--dark-background-color);
 }
 
 .hero-title {
-	color: var(--light-color-text);
+	color: var(--light-text-color);
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.4;
@@ -90,17 +91,76 @@ body {
 }
 
 .hero-button {
-	color: var(--light-color-text);
+	color: var(--light-text-color);
 
 	background-color: var(--acent-color);
+
+	cursor: pointer;
 }
 
-/* Загальне для секцій */
+/* section */
 .section-title {
-	color: var(--header-color-text);
+	color: var(--title-text-color);
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.2;
 	letter-spacing: 0.03em;
 	text-align: center;
+}
+
+/* features */
+.features-list .title {
+	color: var(--title-text-color);
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.1;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+
+.features-list .text {
+	font-size: 14px;
+	line-height: 1.7;
+	letter-spacing: 0.03em;
+}
+
+/* team */
+.team-list .title {
+	color: var(--title-text-color);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
+}
+
+.team-list .text {
+	font-size: 16px;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
+}
+
+/* footer */
+.footer {
+		background-color: var(--dark-background-color);
+}
+
+.footer .logo {
+	color: var(--light-text-color);
+}
+
+.footer-list .text {
+	color: var(--light-text-color);
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.7;
+	letter-spacing: 0.03em;
+}
+
+.footer-list .link {
+	color: var(--light-link-color);
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.7;
+	letter-spacing: 0.03em;
+	text-decoration: none;
 }
