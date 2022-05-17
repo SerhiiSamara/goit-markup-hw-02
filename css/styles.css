@@ -3,6 +3,7 @@
 	--dark-background-color: #2F303A;
 	--secodary-background-color: #F5F4FA;
 	--accent-color: #2196F3;
+	--accent-hover-color: #188CE8;
 	--light-text-color: #fff;
 	--light-link-color: rgba(255, 255, 255, 0.6);
 	--primary-text-color: #757575;
@@ -117,12 +118,17 @@ body {
 	cursor: pointer;
 }
 
+.button.primary:hover,
+.button.primary:focus {
+		background-color: var(--accent-hover-color);
+}
+
 /* section */
 
 .section-title {
 	color: var(--title-text-color);
 	font-weight: 700;
-	font-size: 26px;
+	font-size: 36px;
 	line-height: 1.2;
 	letter-spacing: 0.03em;
 	text-align: center;
@@ -174,20 +180,20 @@ body {
 	color: var(--light-text-color);
 }
 
+.footer-address {
+		font-style: normal;
+		font-size: 14px;
+		line-height: 1.7;
+		letter-spacing: 0.03em;
+}
+
 .footer-list .text {
 	color: var(--light-text-color);
-	font-style: normal;
-	font-size: 14px;
-	line-height: 1.7;
-	letter-spacing: 0.03em;
+	
 }
 
 .footer-list .link {
 	color: var(--light-link-color);
-	font-style: normal;
-	font-size: 14px;
-	line-height: 1.7;
-	letter-spacing: 0.03em;
 	text-decoration: none;
 }
 
