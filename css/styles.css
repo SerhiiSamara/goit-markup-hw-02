@@ -1,7 +1,8 @@
 :root {
-	--light-background-color: #fff;
+	--primary-background-color: #fff;
 	--dark-background-color: #2F303A;
-	--acent-color: #2196F3;
+	--secodary-background-color: #F5F4FA;
+	--accent-color: #2196F3;
 	--light-text-color: #fff;
 	--light-link-color: rgba(255, 255, 255, 0.6);
 	--primary-text-color: #757575;
@@ -13,7 +14,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	color: var(--primary-text-color);
 
-	background-color: var(--light-background-color);
+	background-color: var(--primary-background-color);
 }
 
 .list {
@@ -21,7 +22,11 @@ body {
 }
 
 /* Сторінка студія */
-/* Логотип */
+
+/* header */
+
+/* logo */
+
 .logo {
 	font-family: 'Raleway', sans-serif;
 	color: var(--black-text-color);
@@ -32,13 +37,12 @@ body {
 	text-decoration: none;
 }
 
-/* logo */
 .logo:focus {
 	outline: none;
 }
 
 .logo-accent {
-	color: var(--acent-color);
+	color: var(--accent-color);
 }
 
 /* nav */
@@ -51,14 +55,19 @@ body {
 	text-decoration: none;
 }
 
+.nav-link.current {
+	color: var(--accent-color);
+}
+
 .nav-link:hover,
 .nav-link:focus {
-	color: var(--acent-color);
+	color: var(--accent-color);
 
 	outline: 0;
 }
 
 /* contact */
+
 .contacts-link {
 	color: var(--primary-text-color);
 	font-weight: 500;
@@ -70,12 +79,13 @@ body {
 
 .contacts-link:hover,
 .contacts-link:focus {
-	color: var(--acent-color);
+	color: var(--accent-color);
 
 	outline: 0;
 }
 
 /* hero */
+
 .hero {
 	background-color: var(--dark-background-color);
 }
@@ -90,15 +100,25 @@ body {
 	text-transform: uppercase;
 }
 
-.hero-button {
-	color: var(--light-text-color);
+.button {
+	border-color: transparent;
+}
 
-	background-color: var(--acent-color);
+.button.primary {
+	color: var(--light-text-color);
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.9;
+	text-align: center;
+	letter-spacing: 0.06em;
+
+	background-color: var(--accent-color);
 
 	cursor: pointer;
 }
 
 /* section */
+
 .section-title {
 	color: var(--title-text-color);
 	font-weight: 700;
@@ -108,7 +128,8 @@ body {
 	text-align: center;
 }
 
-/* features */
+/* section features */
+
 .features-list .title {
 	color: var(--title-text-color);
 	font-weight: 700;
@@ -124,7 +145,12 @@ body {
 	letter-spacing: 0.03em;
 }
 
-/* team */
+/* section team */
+
+.team {
+	background: var(--secodary-background-color);
+}
+
 .team-list .title {
 	color: var(--title-text-color);
 	font-weight: 500;
@@ -163,4 +189,49 @@ body {
 	line-height: 1.7;
 	letter-spacing: 0.03em;
 	text-decoration: none;
+}
+
+.footer-list .link:hover,
+.footer-list .link:focus {
+	color: var(--accent-color);
+
+	outline: 0;
+}
+
+/* Страница Портфолио */
+
+/* section example */
+
+.button.secondary {
+	color: var(--title-text-color);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1/6;
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	background: var(--secodary-background-color);
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+color: var(--light-text-color);
+
+	background-color: var(--accent-color);
+
+	cursor: pointer;
+}
+
+.example-list .title {
+	color: var(--title-text-color);
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
+
+.example-list .text {
+	font-size: 16px;
+	line-height: 1.9;
+	letter-spacing: 0.03em;
 }
