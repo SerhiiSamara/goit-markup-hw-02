@@ -176,7 +176,7 @@ body {
   background-color: var(--dark-background-color);
 }
 
-.footer .logo {
+.footer > .logo {
   color: var(--light-text-color);
 }
 
@@ -187,7 +187,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.footer-list .text {
+.footer-list > .text {
   color: var(--light-text-color);
 }
 
